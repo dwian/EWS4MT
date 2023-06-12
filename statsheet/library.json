@@ -1,0 +1,14 @@
+{
+  "name": "ews_statsheet",
+  "version": "0.9.0",
+  "website": "www.rptools.net",
+  "gitUrl": "github.com/dwian/EWS4MT/statsheet",
+  "authors": [ "dwian" ],
+  "license": "GPL 3.0",
+  "namespace": "com.github.dwian.ews4mt",
+  "description": "first draft of a statsheet for EWS in maptool for exploration of necessary properties and macros",
+  "shortDescription": "statsheet for EWS",
+  "allowsUriAccess": true,
+  "readMeFile": "readme.md",
+  "licenseFile": "license.txt"
+}
