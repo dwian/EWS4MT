@@ -1,0 +1,10 @@
+{
+  "statSheets": [
+    { 
+        "name": "EWS",
+        "description": "EWS character sheet",
+        "propertyTypes": [ "EWS" ],
+        "entry": "statsheet/ews/index.hbs" 
+    }
+  ]
+}
