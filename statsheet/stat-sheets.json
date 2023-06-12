@@ -5,6 +5,12 @@
         "description": "EWS character sheet",
         "propertyTypes": [ "EWS" ],
         "entry": "statsheet/ews/index.hbs" 
+    },
+    { 
+        "name": "Basic",
+        "description": "Basic Stat Sheet",
+        "propertyTypes": [ "Basic" ],
+        "entry": "statsheet/stats/basic/index.hbs" 
     }
   ]
 }
