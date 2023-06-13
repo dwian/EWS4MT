@@ -8,6 +8,17 @@
   </head>
   <body>
     <div id="statSheet" class="{{statSheetLocation}}">
+      <div class="p1">
+        <p>Name des Charakters</p>
+        <p>Spezies und Geschlecht</p>
+        <p>Alter</>
+        <p>Größe</p>
+        <p>Hautfarbe</p>
+        <p>Haarfarbe</p>
+        <p>Augenfarbe</p>
+        <p>Aussehen und typische Kleidung</p>
+        <p>Prägende Erlebnisse</p>
+
       <div class="portrait">
         {{#if portrait}}
         <img
@@ -29,6 +40,27 @@
           {{/if}}
         </div>
       </div>
+</div>
+<div="p2">
+<p>Qualifikationen</p>
+<p>Beruf 1-x<br/> mit Spezialisierung</p>
+<p>Fertigkeit 1-x <br/> mit Spezialisierung(en)</p>
+<p>Stärke 1-x<br/>Zitat +/-</p>
+<p>Schwäche 1-x<br/>Zitat +/-</p>
+<p>Besonderheit 1-x </p>
+</div>)
+<div="p3">
+<p>Antrieb Wollen<br/>Zitat</p>
+<p>Antrieb Handeln<br/>Zitat</p>
+<p>Antrieb Sein<br/>Zitat</p>
+<p>Warum bin ich hier?</p>
+<p>Was hält mich bei der Gruppe?</p>
+<p>Was macht mich sympathisch?</p>
+
+</div>)
+<div="p4">
+<p>Ausrüstung</p>
+</div>)
       <div class="statDetails">
         <ul class="propertyList">
           {{#each properties}} 
@@ -48,6 +80,6 @@
           {{/each}}
         </ul>
       </div>
-    </div>
+    </div> <!-- statSheetLocation -->
   </body>
 </html>
