@@ -1,84 +1,56 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link
       rel="stylesheet"
       href="lib://net.rptools.maptool/css/mt-stat-sheet.css?cachelib=false"
     />
-    <link rel="stylesheet" href="./statsheet.css?cachelib=false" />
+    <link rel="stylesheet" href="./statsheet.css?cachelib=false" /> 
   </head>
   <body>
     <div id="statSheet" class="{{statSheetLocation}}">
-      <div class="p1">
-        <p>Name des Charakters</p>
-        <p>Spezies und Geschlecht</p>
-        <p>Alter</>
-        <p>Größe</p>
-        <p>Hautfarbe</p>
-        <p>Haarfarbe</p>
-        <p>Augenfarbe</p>
-        <p>Aussehen und typische Kleidung</p>
-        <p>Prägende Erlebnisse</p>
-
-      <div class="portrait">
-        {{#if portrait}}
-        <img
-          src="{{portrait}}"
-          width="{{portraitWidth}}"
-          height="{{portraitHeight}}"
-        />
-        {{else if image}}
-        <img
-          src="{{image}}"
-          width="{{portraitWidth}}"
-          height="{{portraitHeight}}"
-        />
-        {{/if}}
-        <div class="nameDetails">
-          <div class="tokenName">{{name}}</div>
-          {{#if gmName}}
-            <div class="tokenGmName">({{gmName}})</div>
-          {{/if}}
-        </div>
-      </div>
-</div>
-<div="p2">
-<p>Qualifikationen</p>
-<p>Beruf 1-x<br/> mit Spezialisierung</p>
-<p>Fertigkeit 1-x <br/> mit Spezialisierung(en)</p>
-<p>Stärke 1-x<br/>Zitat +/-</p>
-<p>Schwäche 1-x<br/>Zitat +/-</p>
-<p>Besonderheit 1-x </p>
-</div>)
-<div="p3">
-<p>Antrieb Wollen<br/>Zitat</p>
-<p>Antrieb Handeln<br/>Zitat</p>
-<p>Antrieb Sein<br/>Zitat</p>
-<p>Warum bin ich hier?</p>
-<p>Was hält mich bei der Gruppe?</p>
-<p>Was macht mich sympathisch?</p>
-
-</div>)
-<div="p4">
-<p>Ausrüstung</p>
-</div>)
-      <div class="statDetails">
-        <ul class="propertyList">
-          {{#each properties}} 
-            {{#if this.gmOnly}}
-              {{#if this.shortName}}
-                <li class="gmProperty">{{this.displayName}}({{this.shortName}}): {{this.value}}</li>
-              {{else}}
-                <li class="gmProperty">{{this.displayName}}: {{this.value}}</li>
-              {{/if}}
-            {{else}}
-              {{#if this.shortName}}
-                <li class="playerProperty">{{this.displayName}}({{this.shortName}}): {{this.value}}</li>
-              {{else}}
-                <li class="playerProperty">{{this.displayName}}: {{this.value}}</li>
-              {{/if}}
-            {{/if}} 
-          {{/each}}
+      <div class="page" style="border:2px solid var(--mt-theme-color-actions-green-dark)">
+        <ul>
+          <li>John Doe</li>
+          <li><p>Spezies und Geschlecht</p>Querxianer</li>
+          <li><p>Alter</p>24</li>
+          <li><p>Größe</p>1,84m</li>
+          <li><p>Hautfarbe</p>graublau</li>
+          <li><p>Haarfarbe</p>weiß</li>
+          <li><p>Augenfarbe</p>klar</li>
+          <li><p>Aussehen und typische Kleidung</p></li>
         </ul>
+      </div>
+      <div class="page" style="border:2px solid var(--mt-theme-color-actions-blue)">
+        <ul>
+          <li>Können</li>
+          <li><p>Beruf 1-x<br/> mit Spezialisierung</p></li>
+          <li><p>Fertigkeit 1-x <br/> mit Spezialisierung(en)</p></li>
+          <li><p>Stärke 1-x<br/>Zitat +/-</p></li>
+          <li><p>Schwäche 1-x<br/>Zitat +/-</p></li>
+          <li><p>Besonderheit 1-x </p></li>
+        </ul>
+      </div>
+      <div class="page" style="border:2px solid var(--mt-theme-color-actions-red-dark)">
+        <ul>
+          <li>Motivation</li>
+          <li><p>Antrieb Wollen<br/>Zitat</p></li>
+          <li><p>Antrieb Handeln<br/>Zitat</p></li>
+          <li><p>Antrieb Sein<br/>Zitat</p></li>
+          <li><p>Warum bin ich hier?</p></li>
+          <li><p>Was hält mich bei der Gruppe?</p></li>
+          <li><p>Was macht mich sympathisch?</p></li>
+          <li><p>Prägende Erlebnisse</p></li>
+        </ul>
+      </div>
+      <div class="page" style="border:2px solid var(--mt-theme-color-objects-yellow-dark)">
+        <ul>
+          <li>Ausrüstung</li>
+          <li><p>Waffen und Rüstung</p></li>
+        </ul>
+      </div>
+        <div class="page">
+          <div>&nbsp;</div>
       </div>
     </div> <!-- statSheetLocation -->
   </body>
