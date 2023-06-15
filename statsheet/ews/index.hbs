@@ -11,8 +11,24 @@
     <div id="statSheet" class="{{statSheetLocation}}">
       <div class="page" style="border:2px solid var(--mt-theme-color-actions-green-dark)">
         <ul>
-          <li>John Doe</li>
-          <li><p>Spezies und Geschlecht</p>Querxianer</li>
+          <li>{{name}}</li>
+          <li>
+          {{#if portrait}}
+        <img
+          src="{{portrait}}"
+          width="{{portraitWidth}}"
+          height="{{portraitHeight}}"
+        />
+        {{else if image}}
+        <img
+          src="{{image}}"
+          width="{{portraitWidth}}"
+          height="{{portraitHeight}}"
+        />
+        {{/if}}
+          </li>
+    {{#each properties}}
+          <li><p>Spezies</p>Querxianer</li>
           <li><p>Alter</p>24</li>
           <li><p>Größe</p>1,84m</li>
           <li><p>Hautfarbe</p>graublau</li>
